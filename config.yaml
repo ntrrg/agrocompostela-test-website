@@ -1,0 +1,67 @@
+baseURL: https://agrocompostela.com.ve
+enableRobotsTXT: true
+params:
+  title: Agrocompostela
+  titleSeparator: ·
+  image: uploads/logo.png
+  org:
+    name: Agrocompostela CA
+    email: info@agrocompostela.com.ve
+    logo: uploads/logo.png
+    isologo: uploads/isologo.png
+    social:
+      facebook:
+        url: https://www.facebook.com/agrocompostela
+        icon: social-facebook.svg
+        text: Agrocompostela
+      twitter:
+        url: https://twitter.com/agrocompostela
+        icon: social-twitter.svg
+        text: "@agrocompostela"
+      instagram:
+        url: https://www.instagram.com/agrocompostela
+        icon: social-instagram.svg
+        text: "@agrocompostela"
+      linkedin:
+        url: https://www.linkedin.com/in/agrocompostela
+        icon: social-linkedin.svg
+        text: Agrocompostela
+      youtube:
+        url: https://www.youtube.com/channel/asd_sdqwdkjlaxnajd
+        icon: social-youtube.svg
+        text: Agrocompostela
+      telegram:
+        url: https://t.me/agrocompostela
+        icon: social-telegram.svg
+        text: "@agrocompostela"
+      email:
+        url: mailto://info@agrocompostela.com.ve
+        icon: social-email.svg
+        text: info@agrocompostela.com.ve
+      phone:
+        url: tel://580001234567
+        icon: social-phone.svg
+        text: +58 XXX-1234567
+  currencies:
+    - USD
+    - VES
+defaultContentLanguage: es
+languages:
+  en:
+    languageName: English
+    params:
+      description: A small description of the organization
+      slogan: Love and grow with Agrocompostela
+      currency: USD
+      deals:
+        - harina-de-platano-5kg
+  es:
+    languageName: Español
+    params:
+      description: Una pequeña descripción de la organización
+      slogan: Ama y crece con Agrocompostela
+      currency: VES
+      deals:
+        - harina-de-platano-1kg
+        - harina-de-platano-10kg
+

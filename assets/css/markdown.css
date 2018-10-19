@@ -1,0 +1,91 @@
+.markdown {
+  font-size: 18px;
+  position: relative;
+}
+
+.markdown .markdown-title {
+  font-size: 2.5em;
+}
+
+.markdown .markdown-image {
+  max-width: 100%;
+  max-height: 80vh;
+
+  display: block;
+  margin: 2em auto;
+}
+
+@media screen and (min-width: 768px) {
+  .markdown .markdown-image {
+    max-width: 40%;
+    max-height: 50vh;
+
+    float: right;
+    margin: 2em;
+  }
+}
+
+.markdown hr {
+  width: 80%;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  color: #468847;
+  margin: 0.5em 0em;
+}
+
+.markdown h1 {
+  font-size: 2em;
+}
+
+.markdown h2 {
+  font-size: 1.8em;
+}
+
+.markdown h3 {
+  font-size: 1.6em;
+}
+
+.markdown h4 {
+  font-size: 1.4em;
+}
+
+.markdown h5 {
+  font-size: 1.2em;
+}
+
+.markdown h6 {
+  font-size: 1.1em;
+}
+
+.markdown img {
+  max-width: 100%;
+}
+
+.markdown dt {
+  font-weight: bold;
+}
+
+.markdown .footnotes {
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+.markdown blockquote {
+  border-left: 0.2em solid #ccc;
+  color: #888;
+  font-style: italic;
+  padding-left: 1em;
+}
+
+.markdown th, 
+.markdown td {
+  border: 0.1em solid;
+  padding: 0.5em 1em;
+}
+

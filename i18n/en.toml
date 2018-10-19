@@ -1,0 +1,12 @@
+# Header
+
+[LANGUAGE]
+other = "Language"
+
+[CURRENCY]
+other = "Currency"
+
+# Shopping cart
+
+[ADD_TO_CART]
+other = "Add"

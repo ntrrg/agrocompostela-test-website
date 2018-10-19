@@ -1,0 +1,9 @@
+*.sublime*
+*.swp
+Session.vim
+/public/
+nogit-*
+.DS_Store
+.screenrc
+/resources/
+

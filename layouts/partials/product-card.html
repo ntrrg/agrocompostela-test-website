@@ -1,0 +1,25 @@
+<div class="product-card text-center simpleCart_shelfItem">
+  <a href="{{ .Permalink }}">
+    <img alt="{{ .Title }}" data-src="{{ .Params.thumbnail }}"/>
+    <h1 class="item_name">{{ .Title }}</h1>
+
+    <div class="price text-muted">
+      {{ range .Params.price }}
+        {{ if eq .currency $.Site.Params.currency }}
+          <span class="item_price">{{ .currency }} {{ .amount }}</span>
+        {{ end }}
+
+        <input type="hidden" value="{{ .currency }} {{ .amount }}"
+               class="product-price-{{ .currency }}"/>
+      {{ end }}
+    </div>
+  </a>
+
+  <div class="actions">
+    <input type="number" class="form-control item_Quantity" value="1"/>
+
+    <button class="btn item_add">
+      {{ i18n "ADD_TO_CART" }}
+    </button>
+  </div>
+</div>

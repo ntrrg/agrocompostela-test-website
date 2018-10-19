@@ -1,0 +1,63 @@
+{{ define "main" }}
+  <!-- Banner -->
+  <section class="banner">
+    <div class="container">
+      <div class="banner-bottom row">
+        <div class="banner-bottom-left col-xs-12 col-sm-6"></div>
+
+        <div class="banner-bottom-right col-xs-12 col-sm-6">
+          <ul id="product-deals">
+            {{ range .Site.Params.deals }}
+              {{ $product := $.Site.GetPage (print "/products/" .) }}
+              <li>{{ partial "product-card.html" $product }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Banner -->
+
+  <!-- Contacts -->
+  <section class="container section-contacts">
+    <div class="row social-links">
+      {{ range .Site.Params.org.social }}
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <a href="{{ .url | safeURL }}">
+            <img src="uploads/{{ .icon }}"/>
+            {{ with .text }}<span>{{ . }}</span>{{ end }}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  <!-- /Contacts -->
+
+  <!-- About -->
+  <section id="about"
+           class="container-fluid text-center background section-about">
+    <div class="slogan">“{{ .Site.Params.slogan }}”</div>
+
+    {{ with .Site.GetPage "/about" }}
+      <a class="btn" href="{{ .Permalink }}">{{ .Description }}</a>
+    {{ end }}
+  </section>
+  <!-- /About -->
+
+  <!-- Products -->
+  {{ $products := index (where .Site.Sections "Type" "products") 0 }}
+
+  <section class="container section-products">
+    <h1 class="text-center">
+      <a href="{{ $products.URL }}">{{ $products.Title }}</a>
+    </h1>
+
+    <ul id="recent-products" class="product-slider">
+      {{ range first 5 $products.Pages.ByDate }}
+        <li>{{ partial "product-card.html" . }}</li>
+      {{ end }}
+    </ul>
+  </section>
+  <!-- /Products -->
+{{ end }}
+

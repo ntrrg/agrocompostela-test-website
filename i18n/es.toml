@@ -1,0 +1,12 @@
+# Cabecera
+
+[LANGUAGE]
+other = "Idioma"
+
+[CURRENCY]
+other = "Moneda"
+
+# Carrito
+
+[ADD_TO_CART]
+other = "Añadir"

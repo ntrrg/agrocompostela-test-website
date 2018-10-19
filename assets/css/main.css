@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Stonehenge";
+  src: url("../fonts/stonehenge.ttf") format("truetype");
+}
+
+body {
+	background: #fff;
+	font-family: "Stonehenge";
+	margin: 0;
+	padding: 0;
+}
+
+body a {
+  transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+input[type="button"], input[type="submit"] {
+  transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;	
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	margin: 0;
+}
+
+.badge {
+  font-size: x-small;
+}
+
+.cart-badge {
+  top: -1em;
+  margin-left: -1em;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+/* Header { */
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-top-strip {
+  color: #fff;
+  background-color: #468847;
+  padding: 0.5em 0em 0.8em 0em;
+}
+
+.header-top-left {
+  float: left;
+  margin-top: 0.5em;
+}
+
+.header-top-left ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.header-right {
+  float: right;
+  margin-top: 0.5em;
+}
+
+/* } Header */
+
+/* Navbar { */
+
+.banner-top .navbar {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+.banner-top a {
+  color: #000;
+  text-decoration: none;
+}
+
+.banner-top .logo img {
+  height: 3.5em;
+}
+
+.banner-top .logo h1 {
+  display: inline-block;
+  font-size: 1.8em;
+
+  position: relative;
+  top: 0.2em;
+  left: 0.2em;
+}
+
+.banner-top .navbar .navbar-nav > li > a {
+  color: #000;
+  border: 0.1em solid #f8f8f8;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  width: 100%;
+
+  text-align: center;
+  margin: 0.7em 0;
+  margin-right: 0;
+}
+
+.navbar-collapse.collapse {
+  border: none;
+  padding: 0em;
+}
+
+.banner-top .navbar .navbar-nav > li > a:hover,
+.banner-top .navbar .navbar-nav > li > a:focus {
+  background-color: transparent;
+  border-color: #468847;
+  color: #468847;
+}
+
+.banner-top .navbar .navbar-brand:hover,
+.banner-top .navbar .navbar-brand:focus {
+  color: #000;
+  background-color: transparent;
+}
+
+.banner-top .navbar .navbar-nav > .open > a,
+.banner-top .navbar .navbar-nav > .open > a:hover,
+.banner-top .navbar .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    width: auto;
+
+    float: right;
+    margin: 0em;
+
+    position: relative;
+    top: 0.25em;
+  }
+}
+
+@media screen and (max-width: 320px) {	
+  .navbar-toggle {
+    padding: 7px 7px;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+  }
+}
+
+/* } Navbar */
+
+/* Footer { */
+
+body > footer {
+  background: #222;
+  color: #fff;
+  padding: 2em 0em;
+  margin-top: 1em;
+}
+
+body > footer .copyright,
+body > footer .powered-by {
+  margin-bottom: 0.5em;
+}
+
+body > footer .powered-by li {
+  border-right: 0.1em solid #e7e7e7;
+  display: inline-block;
+  list-style: none;
+  margin-left: -0.4em;
+  padding: 0.25em 1em;
+}
+
+body > footer .powered-by li:last-child {
+  border-right: none;
+}
+
+body > footer .powered-by li a {
+  color: #fff;
+}
+
+/* } Footer */
+
+/* Products { */
+
+.product-card {
+  width: 20em;
+  max-width: 100%;
+
+  background-color: #fff;
+  border-radius: 0.5em;
+  color: #000;
+  filter: drop-shadow(0em 0em 0.1em #000000aa);
+  margin: 0em auto;
+  overflow: auto;
+}
+
+.product-card a {
+  color: #000;
+}
+
+.product-card img {
+  width: 100%;
+  min-height: 20em;
+
+  border-radius: 0.5em 0.5em 0em 0em;
+  object-fit: contain;
+  object-position: center;
+}
+
+.product-card h1 {
+  color: #000;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+.product-card .price {
+  margin: 0.25em;
+}
+
+.product-card input {
+  width: 5em;
+
+  display: inline-block;
+}
+
+.product-card button {
+  background-color: #468847;
+  color: #fff;
+}
+
+.product-card .actions {
+  margin-bottom: 1em;
+}
+
+/* } Products */
+

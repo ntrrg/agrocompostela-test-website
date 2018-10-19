@@ -1,0 +1,35 @@
+{{ with .Params.math }}
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+{{ end }}
+
+{{ $suffix := "" }}
+{{ $scripts := slice }}
+{{ $scripts = $scripts | append "vendor/template/js/jquery.min.js" }}
+{{ $scripts = $scripts | append "vendor/template/js/bootstrap-3.1.1.min.js" }}
+{{ $scripts = $scripts | append "vendor/template/js/jquery.flexisel.js" }}
+{{ $scripts = $scripts | append "vendor/template/js/simpleCart.min.js" }}
+{{ $scripts = $scripts | append "vendor/blazy.min.js" }}
+{{ $scripts = $scripts | append "js/main.js" }}
+
+{{ if .IsHome }}
+  {{ $suffix = printf "%v-home" $suffix  }}
+  {{ $scripts = $scripts | append "js/home.js" }}
+{{ else if eq .Kind "page" }}
+  {{ $suffix = printf "%v-page" $suffix  }}
+{{ end }}
+
+{{ if .Site.IsServer }}
+  {{ range $scripts }}
+    {{ $script := resources.Get . }}
+    <script src="{{ $script.Permalink }}"></script>
+  {{ end }}
+{{ else }}
+  {{ $res := slice }}
+  {{ range $scripts }}{{ $res = $res | append (resources.Get .) }}{{ end }}
+
+  {{ $script := resources.Concat (printf "js/bundle%v.js" $suffix) $res | minify | fingerprint }}
+
+  <script async src="{{ $script.Permalink }}"
+          integrity="{{ $script.Data.Integrity }}"></script>
+{{ end }}
+

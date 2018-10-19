@@ -1,0 +1,28 @@
+{{ $suffix := "" }}
+{{ $sheets := slice }}
+{{ $sheets = $sheets | append "vendor/template/css/bootstrap.css" }}
+{{ $sheets = $sheets | append "css/main.css" }}
+
+{{ if .IsHome }}
+  {{ $suffix = printf "%v-home" $suffix  }}
+  {{ $sheets = $sheets | append "css/home.css" }}
+  {{ $sheets = $sheets | append "css/markdown.css" }}
+{{ else if eq .Kind "page" }}
+  {{ $suffix = printf "%v-page" $suffix  }}
+{{ end }}
+
+{{ if .Site.IsServer }}
+  {{ range $sheets }}
+    {{ $sheet := resources.Get . }}
+    <link rel="stylesheet" type="text/css" href="{{ $sheet.Permalink }}"/>
+  {{ end }}
+{{ else }}
+  {{ $res := slice }}
+  {{ range $sheets }}{{ $res = $res | append (resources.Get .) }}{{ end }}
+
+  {{ $sheet := resources.Concat (printf "css/bundle%v.css" $suffix) $res | minify | fingerprint }}
+
+  <link rel="stylesheet" type="text/css" href="{{ $sheet.Permalink }}"
+        integrity="{{ $sheet.Data.Integrity }}"/>
+{{ end }}
+
