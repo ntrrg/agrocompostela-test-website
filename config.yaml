@@ -1,4 +1,4 @@
-baseURL: https://agrocompostela.com.ve
+baseURL: https://agrocompostela.netlify.com
 enableRobotsTXT: true
 params:
   title: Agrocompostela
