@@ -20,6 +20,7 @@ sections:
   label: Recipes
   create: all
   match: "**/*"
+  exclude: "**/_*"
 - type: directory
   path: content/products
   label: Shop
@@ -31,7 +32,6 @@ sections:
 - type: document
   path: config.yaml
   label: Parameters
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
