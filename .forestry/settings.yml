@@ -5,10 +5,16 @@ admin_path: "/admin/"
 webhook_url: 
 sections:
 - type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
   path: content/blog
-  label: Blog
+  label: Articles
   create: all
   match: "**/*"
+  exclude: "**/_*"
 - type: directory
   path: content/recipes
   label: Recipes
@@ -16,14 +22,16 @@ sections:
   match: "**/*"
 - type: directory
   path: content/products
-  label: Products
+  label: Shop
   create: all
   match: "**/*"
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
+  exclude: "**/_*"
+- type: heading
+  label: Data
+- type: document
+  path: config.yaml
+  label: Parameters
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
