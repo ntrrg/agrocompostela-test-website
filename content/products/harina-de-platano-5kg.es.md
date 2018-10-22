@@ -14,8 +14,7 @@
   "inStock": true,
   "date": "2018/10/14T23:08:00-0400",
   "categories": [],
-  "tags": [],
-  "draft": true
+  "tags": []
 }
 
 Harina de 5KG.
