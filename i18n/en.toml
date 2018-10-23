@@ -10,3 +10,22 @@ other = "Currency"
 
 [ADD_TO_CART]
 other = "Add"
+
+# Pages list
+
+[DATE]
+other = "Date"
+
+[CATEGORIES]
+other = "Categories"
+
+[TAGS]
+other = "Tags"
+
+# Shortcodes
+
+[TOC_TITLE]
+other = "Table of Contents"
+
+[DEFAULT_NOTE_TITLE]
+other = "Note"

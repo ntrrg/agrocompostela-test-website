@@ -1,9 +1,3 @@
-section h1 {
-  color: #468847;
-  font-size: 3em;
-  margin: 0.5em 0em;
-}
-
 section h1 a,
 section h1 a:hover {
   color: inherit;
@@ -49,6 +43,45 @@ section.background > h1 {
 	padding: 0em;
 
 	position: relative;
+}
+
+.flexisel-with-nav {
+  margin-bottom: 3em;
+}
+
+.flexisel-with-nav .nbs-flexisel-nav-left,
+.flexisel-with-nav .nbs-flexisel-nav-right {
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+  filter: drop-shadow(0em 0em 0.1em #000000aa);
+  font-family: "Glyphicons Halflings";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0.4em 0.5em 0.5em 0.5em;
+
+  position: absolute;
+  top: calc(100% + 1.5em) !important;
+}
+
+.flexisel-with-nav .nbs-flexisel-nav-left {
+  left: calc(50% - 2.5em);
+}
+
+.flexisel-with-nav .nbs-flexisel-nav-left::before {
+  content: "\e079";
+}
+
+.flexisel-with-nav .nbs-flexisel-nav-right {
+  left: calc(50% + 1.5em);
+}
+
+.flexisel-with-nav .nbs-flexisel-nav-right::before {
+  content: "\e080";
 }
 
 /* } Flexisel */

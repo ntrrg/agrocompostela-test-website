@@ -1,0 +1,54 @@
+{{ define "main" }}
+  <main class="main">
+    <header><h1 class="main-title">{{ .Title }}</h1></header>
+    <article>{{ .Content }}</article>
+
+    <footer>
+      {{ if gt (len .Paginator.Pages) 0 }}
+        <div class="row pages-list">
+          {{ range .Paginator.Pages }}
+            {{ if eq .Type "blog" }}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 page article">
+                <h3><a href="{{ .URL }}">{{ .Title }}</a></h3>
+
+                <div class="text-muted small metadata">
+                  <div>
+                    <strong>{{ i18n "DATE" }}:</strong>
+
+                    <span>{{ .Date.Format "2006/01/02 15:04:05 -0700" }}</span>
+                  </div>
+
+                  <div>
+                    <strong>{{ i18n "TAGS" }}:</strong>
+
+                    {{ range .Params.tags }}
+                      <a href="{{ absLangURL "tags/" }}{{ . | urlize }}">
+                        #{{ . }}</a>
+                    {{ end }}
+                  </div>
+                </div>
+
+                <p class="description">{{ .Description }}</p>
+              </div>
+            {{ else if eq .Type "products" }}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 page product">
+                {{ partial "product-card.html" . }}
+              </div>
+            {{ else }}
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 page">
+                <a href="{{ .URL }}">{{ .Title }}</a>
+
+                {{ with .Pages }}({{ len . }}){{ end }}
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+
+        <div class="text-center">
+          {{ template "_internal/pagination.html" . }}
+        </div>
+      {{ end }}
+    </footer>
+  </main>
+{{ end }}
+

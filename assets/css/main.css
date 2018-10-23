@@ -4,8 +4,7 @@
 }
 
 body {
-	background: #fff;
-	font-family: "Stonehenge";
+  font-family: sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -27,16 +26,18 @@ input[type="button"], input[type="submit"] {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 0;	
+	font-family: "Stonehenge";
+	margin: 0em;	
 }
 
 p {
-	margin: 0;
+	margin: 0em;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
+ol, ul {
+	margin: 0em;
+  margin-left: 1.5em;
+	padding: 0em;
 }
 
 label {
@@ -52,8 +53,18 @@ label {
   margin-left: -1em;
 }
 
+.celtic {
+	font-family: "Stonehenge";
+}
+
 .dropdown-menu li {
   width: 100%;
+}
+
+.main-title {
+  color: #468847;
+  font-size: 3em;
+  margin: 0.5em 0em;
 }
 
 /* Header { */
@@ -88,12 +99,6 @@ label {
 
 /* Navbar { */
 
-.banner-top .navbar {
-  background-color: transparent;
-  border-color: transparent;
-  margin: 0.5em 0em 0.5em 0em;
-}
-
 .banner-top a {
   color: #000;
   text-decoration: none;
@@ -112,12 +117,10 @@ label {
   left: 0.2em;
 }
 
-.banner-top .navbar .navbar-nav > li > a {
-  color: #000;
-  border: 0.1em solid #f8f8f8;
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  text-transform: uppercase;
+.banner-top .navbar {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0.5em 0em 0.5em 0em;
 }
 
 .navbar-nav {
@@ -133,17 +136,19 @@ label {
   padding: 0em;
 }
 
+.banner-top .navbar .navbar-nav > li > a {
+  color: #000;
+  border: 0.1em solid #f8f8f8;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  text-transform: uppercase;
+}
+
 .banner-top .navbar .navbar-nav > li > a:hover,
 .banner-top .navbar .navbar-nav > li > a:focus {
   background-color: transparent;
   border-color: #468847;
   color: #468847;
-}
-
-.banner-top .navbar .navbar-brand:hover,
-.banner-top .navbar .navbar-brand:focus {
-  color: #000;
-  background-color: transparent;
 }
 
 .banner-top .navbar .navbar-nav > .open > a,
@@ -176,11 +181,24 @@ label {
 
 /* } Navbar */
 
+/* Main { */
+
+main.main {
+  padding: 0em 2em 2em 2em;
+}
+
+main.main > h1 {
+  color: #468847;
+  font-size: 3em;
+  margin: 0.5em 0em;
+}
+
+/* } Main*/
+
 /* Footer { */
 
 body > footer {
-  background: #222;
-  color: #fff;
+	background: #222;
   padding: 2em 0em;
   margin-top: 1em;
 }
@@ -191,7 +209,7 @@ body > footer .powered-by {
 }
 
 body > footer .powered-by li {
-  border-right: 0.1em solid #e7e7e7;
+  border-right: 0.1em solid;
   display: inline-block;
   list-style: none;
   margin-left: -0.4em;
@@ -203,7 +221,7 @@ body > footer .powered-by li:last-child {
 }
 
 body > footer .powered-by li a {
-  color: #fff;
+  color: inherit;
 }
 
 /* } Footer */
@@ -242,7 +260,7 @@ body > footer .powered-by li a {
 }
 
 .product-card .price {
-  margin: 0.25em;
+  margin: 0.5em;
 }
 
 .product-card input {
@@ -262,3 +280,21 @@ body > footer .powered-by li a {
 
 /* } Products */
 
+/* Pagination { */
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #468847;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #468847;
+  border-color: #468847;
+}
+
+/* } Pagination */

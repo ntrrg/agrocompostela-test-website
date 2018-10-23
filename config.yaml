@@ -1,5 +1,6 @@
 baseURL: https://agrocompostela.netlify.com
 enableRobotsTXT: true
+Paginate: 12
 params:
   title: Agrocompostela
   titleSeparator: ·

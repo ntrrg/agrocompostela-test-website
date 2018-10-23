@@ -3,7 +3,7 @@ $(window).load(function() {
     visibleItems: 1,
     itemsToScroll: 1,
     animationSpeed: 1000,
-    autoPlay: true,
+    // autoPlay: true,
     autoPlaySpeed: 5000,    		
     pauseOnHover: true
   })
@@ -12,7 +12,7 @@ $(window).load(function() {
     visibleItems: 3,
     itemsToScroll: 3,
     animationSpeed: 1000,
-    autoPlay: true,
+    // autoPlay: true,
     autoPlaySpeed: 3000,    		
     pauseOnHover: true,
     enableResponsiveBreakpoints: true,

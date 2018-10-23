@@ -14,8 +14,6 @@
 {{ if .IsHome }}
   {{ $suffix = printf "%v-home" $suffix  }}
   {{ $scripts = $scripts | append "js/home.js" }}
-{{ else if eq .Kind "page" }}
-  {{ $suffix = printf "%v-page" $suffix  }}
 {{ end }}
 
 {{ if .Site.IsServer }}

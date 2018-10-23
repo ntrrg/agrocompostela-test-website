@@ -158,7 +158,7 @@
 
       <div class="collapse navbar-collapse"
            id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav celtic">
           {{ if gt (len .Site.Sections) 0 }}
             {{ range .Site.Sections }}
               <li><a href="{{ .URL }}">{{ .Title }}</a></li>
@@ -179,7 +179,7 @@
 
 <!-- Footer -->
 <footer>
-  <div class="container text-center">
+  <div class="container text-center text-muted small">
     <ul class="powered-by">
       <li><a href="https://nt.web.ve">@ntrrg</a></li>
       <li><a href="https://gohugo.io">Hugo</a></li>

@@ -67,6 +67,11 @@
   max-width: 100%;
 }
 
+.markdown ol,
+.markdown ul {
+  margin-left: 1.5em;
+}
+
 .markdown dt {
   font-weight: bold;
 }
