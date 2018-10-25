@@ -1,7 +1,7 @@
 ---
 title: Demo page
 date: 2028-07-05T18:35:00-04:00
-image: /images/logo.png
+image: /uploads/logo.png
 description: This is a demo page to see the theme styles.
 categories:
   - demo

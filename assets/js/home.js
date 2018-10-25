@@ -3,7 +3,7 @@ $(window).load(function() {
     visibleItems: 1,
     itemsToScroll: 1,
     animationSpeed: 1000,
-    // autoPlay: true,
+    autoPlay: true,
     autoPlaySpeed: 5000,    		
     pauseOnHover: true
   })
