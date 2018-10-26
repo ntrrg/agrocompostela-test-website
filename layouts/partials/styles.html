@@ -6,14 +6,19 @@
 {{ if .IsHome }}
   {{ $suffix = printf "%v-home" $suffix  }}
   {{ $sheets = $sheets | append "css/home.css" }}
-{{ else if eq .Kind "page" }}
-  {{ $suffix = printf "%v-single" $suffix  }}
-  {{ $sheets = $sheets | append "css/single.css" }}
-  {{ $sheets = $sheets | append "css/markdown.css" }}
 {{ else if gt (len .Pages) 0 }}
   {{ $suffix = printf "%v-list" $suffix  }}
-  {{ $sheets = $sheets | append "css/list.css" }}
   {{ $sheets = $sheets | append "css/markdown.css" }}
+  {{ $sheets = $sheets | append "css/list.css" }}
+{{ else if eq .Type "products" }}
+  {{ $suffix = printf "%v-product" $suffix  }}
+  {{ $sheets = $sheets | append "vendor/template/css/flexslider.css" }}
+  {{ $sheets = $sheets | append "css/markdown.css" }}
+  {{ $sheets = $sheets | append "css/product.css" }}
+{{ else if eq .Kind "page" }}
+  {{ $suffix = printf "%v-single" $suffix  }}
+  {{ $sheets = $sheets | append "css/markdown.css" }}
+  {{ $sheets = $sheets | append "css/single.css" }}
 {{ end }}
 
 {{ if .Site.IsServer }}

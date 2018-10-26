@@ -14,6 +14,11 @@
 {{ if .IsHome }}
   {{ $suffix = printf "%v-home" $suffix  }}
   {{ $scripts = $scripts | append "js/home.js" }}
+{{ else if eq .Type "products" }}
+  {{ $suffix = printf "%v-product" $suffix  }}
+  {{ $scripts = $scripts | append "vendor/template/js/imagezoom.js" }}
+  {{ $scripts = $scripts | append "vendor/template/js/jquery.flexslider.js" }}
+  {{ $scripts = $scripts | append "js/product.js" }}
 {{ end }}
 
 {{ if .Site.IsServer }}

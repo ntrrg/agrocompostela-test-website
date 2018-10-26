@@ -24,7 +24,7 @@
       {{ range .Site.Params.org.social }}
         <div class="col-xs-12 col-sm-4 col-md-3">
           <a href="{{ .url | safeURL }}">
-            <img src="uploads/{{ .icon }}"/>
+            <img src="/uploads/{{ .icon }}"/>
             {{ with .text }}<span>{{ . }}</span>{{ end }}
           </a>
         </div>

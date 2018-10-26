@@ -1,10 +1,9 @@
 ---
-title: Página de ejemplo
-date: 2028-07-05T18:35:00-04:00
-image: /uploads/logo.png
-description: Esta es una página de ejemplo para ver los estilos del tema.
-categories:
-  - demo
+title: Artículo de ejemplo
+# date: 2028-07-05T18:35:00-04:00
+date: 2018-07-05T18:35:00-04:00
+image: https://via.placeholder.com/350x350
+description: Este es un artículo de ejemplo para ver los estilos del tema.
 tags:
   - tag1
   - tag2
@@ -59,7 +58,7 @@ _Este es texto en cursiva_
 
 # Imágenes
 
-![imagen de prueba](/uploads/logo.png)
+![imagen de prueba](https://via.placeholder.com/500x300)
 
 # Listas
 
@@ -138,13 +137,11 @@ func main() {
 }
 ```
 
-# Tema
-
-## Teclado
+# Teclado
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Supr</kbd>
 
-## Notas
+# Notas
 
 {{% note %}}
 Esta es una nota
@@ -153,4 +150,8 @@ Esta es una nota
 {{% note "Mi título" %}}
 Esta es una nota con título personalizado.
 {{% /note %}}
+
+# Productos
+
+{{< product-card "demo" >}}
 

@@ -1,31 +1,26 @@
-# Header
-
-[LANGUAGE]
-other = "Language"
-
-[CURRENCY]
-other = "Currency"
-
-# Shopping cart
-
 [ADD_TO_CART]
 other = "Add"
-
-# Pages list
-
-[DATE]
-other = "Date"
 
 [CATEGORIES]
 other = "Categories"
 
+[CURRENCY]
+other = "Currency"
+
+[DATE]
+other = "Date"
+
+[LANGUAGE]
+other = "Language"
+
+[NOTE_TITLE]
+other = "Note"
+
+[PRICE]
+other = "Price"
+
 [TAGS]
 other = "Tags"
 
-# Shortcodes
-
 [TOC_TITLE]
 other = "Table of Contents"
-
-[DEFAULT_NOTE_TITLE]
-other = "Note"

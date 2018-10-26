@@ -47,6 +47,7 @@ params:
     - USD
     - VES
 defaultContentLanguage: es
+defaultContentLanguageInSubdir: true
 languages:
   en:
     languageName: English
@@ -55,7 +56,7 @@ languages:
       slogan: Love and grow with Agrocompostela
       currency: USD
       deals:
-        - harina-de-platano-5kg
+        - demo
   es:
     languageName: Español
     params:
@@ -63,6 +64,5 @@ languages:
       slogan: Ama y crece con Agrocompostela
       currency: VES
       deals:
-        - harina-de-platano-1kg
-        - harina-de-platano-10kg
+        - demo
 

@@ -1,1 +1,22 @@
+.page-image {
+  width: 100vw;
+
+  display: block;
+  margin: 2em 0em 2em -2em;
+}
+
+@media screen and (min-width: 768px) {
+  .page-image {
+    max-width: 40%;
+    max-height: 50vh;
+
+    float: right;
+    margin: 2em;
+  }
+}
+
+.page-metadata dt {
+  float: left;
+  margin-right: 1ex;
+}
 

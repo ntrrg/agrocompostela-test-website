@@ -1,10 +1,9 @@
 ---
-title: Demo page
-date: 2028-07-05T18:35:00-04:00
-image: /uploads/logo.png
-description: This is a demo page to see the theme styles.
-categories:
-  - demo
+title: Demo article
+# date: 2028-07-05T18:35:00-04:00
+date: 2018-07-05T18:35:00-04:00
+image: https://via.placeholder.com/350x350
+description: This is a demo article to see the theme styles.
 tags:
   - tag1
   - tag2
@@ -59,7 +58,7 @@ _This is italic text_
 
 # Images
 
-![test image](/uploads/logo.png)
+![test image](https://via.placeholder.com/500x300)
 
 # Lists
 
@@ -138,13 +137,11 @@ func main() {
 }
 ```
 
-# Theme
-
-## Keyboard
+# Keyboard
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
 
-## Notes
+# Notes
 
 {{% note %}}
 This is a note.
@@ -153,4 +150,8 @@ This is a note.
 {{% note "My title" %}}
 This is a note with a custom title.
 {{% /note %}}
+
+# Products
+
+{{< product-card "demo" >}}
 

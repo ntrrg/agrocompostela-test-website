@@ -1,6 +1,12 @@
 <div class="note">
   <header>
-    {{ with .Get 0 }}{{ . }}{{ else }}{{ i18n "DEFAULT_NOTE_TITLE" }}{{ end }}
+    <h1>
+      {{ with .Get 0 }}
+        {{ . }}
+      {{ else }}
+        {{ i18n "NOTE_TITLE" }}
+      {{ end }}
+    </h1>
   </header>
 
   <main>{{ .Inner }}</main>

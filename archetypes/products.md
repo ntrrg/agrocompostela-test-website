@@ -1,10 +1,12 @@
 ---
 title: {{ replace .Name "-" " " | title }}
-thumbnail: /uploads/thumbnail.png
+date: {{ .Date }}
+description: Short description.
+image: https://via.placeholder.com/350x350
 images:
-  - /uploads/image1.png
-  - /uploads/image2.png
-  - /uploads/image3.png
+  - https://via.placeholder.com/350x500
+  - https://via.placeholder.com/500x150
+  - https://via.placeholder.com/350x350
 price:
   - currency: USD
     amount: 0
@@ -12,11 +14,6 @@ price:
     amount: 0
   - currency: BTC
     amount: 0
-inStock: true,
-date: {{ .Date }}
-categories:
-  - category1
-  - category2
 tags:
   - tag1
   - tag2

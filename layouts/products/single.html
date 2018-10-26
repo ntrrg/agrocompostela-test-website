@@ -1,0 +1,71 @@
+{{ define "main" }}
+  <main class="main">
+    <article class="product simpleCart_shelfItem">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-offset-1 zoom-grid">
+          <div class="flexslider">
+            <ul class="slides">
+              {{ range .Params.images }}
+                <li data-thumb="{{ . }}">
+                  <div class="thumb-image">
+                    <img src="{{ . }}" data-imagezoom="true"
+                         class="img-responsive" />
+                  </div>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-7 col-lg-6">
+          <h1 class="main-title item_name">{{ .Title }}</h1>
+
+          <dl class="metadata">
+            {{ if isset .Params "price" }}
+              <dt>{{ i18n "PRICE" }}:</dt>
+              <dd>
+                {{ range .Params.price }}
+                  {{ if eq .currency $.Site.Params.currency }}
+                    <span class="item_price">
+                      {{ .currency }} {{ .amount }}
+                    </span>
+                  {{ end }}
+
+                  <input type="hidden" value="{{ .currency }} {{ .amount }}"
+                         class="product-price-{{ .currency }}"/>
+                {{ end }}
+              </dd>
+            {{ end }}
+
+            {{ if isset .Params "tags" }}
+              <dt>{{ i18n "TAGS" }}:</dt>
+              <dd>
+                {{ range .Params.tags }}
+                  <a href="{{ absLangURL "tags/" }}{{ . | urlize }}">
+                    #{{ . }}</a>
+                {{ end }}
+              </dd>
+            {{ end }}
+          </dl>
+
+          <div class="actions">
+            <input type="number" class="form-control item_Quantity" value="1"/>
+
+            <button class="btn item_add">
+              {{ i18n "ADD_TO_CART" }}
+            </button>
+          </div>
+
+          {{ if eq .Content "" }}
+            <div class="markdown">{{ .Content }}</div>
+          {{ else }}
+            <p>{{ .Description }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+
+    <footer></footer>
+  </main>
+{{ end }}
+

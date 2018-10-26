@@ -1,0 +1,5 @@
+<div class="product-container">
+  {{ $product := $.Site.GetPage (print "/products/" (.Get 0)) }}
+  {{ partial "product-card.html" $product }}
+</div>
+

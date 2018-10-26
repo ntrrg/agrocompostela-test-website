@@ -1,31 +1,26 @@
-# Cabecera
-
-[LANGUAGE]
-other = "Idioma"
-
-[CURRENCY]
-other = "Moneda"
-
-# Carrito
-
 [ADD_TO_CART]
 other = "Añadir"
-
-# Lista de páginas
-
-[DATE]
-other = "Fecha"
 
 [CATEGORIES]
 other = "Categorías"
 
+[CURRENCY]
+other = "Moneda"
+
+[DATE]
+other = "Fecha"
+
+[LANGUAGE]
+other = "Idioma"
+
+[NOTE_TITLE]
+other = "Nota"
+
+[PRICE]
+other = "Precio"
+
 [TAGS]
 other = "Etiquetas"
 
-# Shortcodes
-
 [TOC_TITLE]
 other = "Tabla de Contenido"
-
-[DEFAULT_NOTE_TITLE]
-other = "Nota"
