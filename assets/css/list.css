@@ -45,9 +45,42 @@
   margin-bottom: 1em;
 }
 
+.pages-list .gallery {
+  padding: 0.5em;
+}
+
+.pages-list .gallery img {
+  width: 100%;
+  min-height: 5em;
+
+  border-radius: 0.5em;
+  object-fit: contain;
+  object-position: center;
+}
+
+.pages-list .gallery .data {
+  width: 100%;
+
+  background-color: #ffffff88;
+  padding: 1em;
+
+  position: absolute;
+  bottom: 0em;
+}
+
+.pages-list.taxonomy h3,
+.pages-list.taxonomy h3 {
+  margin: 0.5em 0em;
+}
+
+.pages-list.taxonomy .description,
+.pages-list.taxonomy .description {
+  margin-bottom: 1em;
+}
+
 @media (min-width: 768px) {
-  .pages-list .blog img,
-  .pages-list .recipes img {
+  .pages-list:not(.taxonomy) .blog img,
+  .pages-list:not(.taxonomy) .recipes img {
     border-radius: 0.5em 0em 0em 0.5em;
   }
 }

@@ -164,11 +164,23 @@ section.background > h1 {
   word-break: break-word;
 }
 
+.section-about .short-description {
+  font-size: 1.5em;
+  margin: 0.5em auto;
+}
+
 .section-about a {
   background-color: #fff;
   color: #468847;
   font-size: 1.5em;
-  margin-top: 1em;
+  margin: 0.5em 0em;
+  white-space: normal;
+}
+
+@media (min-width: 768px) {
+  .section-about .short-description {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 992px) {

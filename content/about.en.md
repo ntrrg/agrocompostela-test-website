@@ -1,7 +1,8 @@
-{
-  "title": "About",
-  "description": "Learn more about us"
-}
+---
+title: About
+description: We are a 100% organic company and our products are gluten-free.
+button: Learn more about us
+---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel efficitur dolor, et cursus diam. Maecenas et dolor sed odio ornare vehicula. Aenean nunc ex, porta sit amet consequat a, aliquam eu ex. Etiam posuere risus et ultricies tempus. Nullam sagittis hendrerit enim, vel vulputate erat dictum in. Suspendisse auctor enim nulla, at malesuada justo iaculis et. Donec quam erat, auctor nec varius non, tempus maximus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet neque eu leo tempor faucibus. Integer mattis tincidunt est sollicitudin tempor. Mauris commodo tortor eu purus iaculis, ac gravida diam tristique.
 

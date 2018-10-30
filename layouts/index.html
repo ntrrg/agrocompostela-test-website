@@ -39,7 +39,8 @@
     <div class="slogan celtic">“{{ .Site.Params.slogan }}”</div>
 
     {{ with .Site.GetPage "/about" }}
-      <a class="btn" href="{{ .Permalink }}">{{ .Description }}</a>
+      <p class="short-description">{{ .Description }}</p>
+      <a class="btn" href="{{ .Permalink }}">{{ .Params.button }}</a>
     {{ end }}
   </section>
   <!-- /About -->
