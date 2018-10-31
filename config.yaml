@@ -53,7 +53,6 @@ languages:
     languageName: English
     params:
       description: A small description of the organization
-      slogan: Love and grow with Agrocompostela
       currency: USD
       deals:
         - demo
@@ -61,7 +60,6 @@ languages:
     languageName: Español
     params:
       description: Una pequeña descripción de la organización
-      slogan: Ama y crece con Agrocompostela
       currency: VES
       deals:
         - demo

@@ -1,5 +1,6 @@
 ---
 title: About
+slogan: Love and grow with Agrocompostela
 description: We are a 100% organic company and our products are gluten-free.
 button: Learn more about us
 ---

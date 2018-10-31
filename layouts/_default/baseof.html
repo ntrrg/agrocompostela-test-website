@@ -126,7 +126,7 @@
         </div>
       </div>
 
-      <div class="clearfix"> </div>
+      <div class="clearfix"></div>
     </div>
   </div>
 </header>
@@ -159,7 +159,7 @@
       <div class="collapse navbar-collapse" id="main-menu">
         <ul class="nav navbar-nav celtic">
           {{ if gt (len .Site.Sections) 0 }}
-            {{ range .Site.Sections }}
+            {{ range sort .Site.Sections "Title" }}
               <li><a href="{{ .URL }}">{{ .Title }}</a></li>
             {{ end }}
           {{ end }}
@@ -202,6 +202,26 @@
   </div>
 </footer>
 <!-- /Footer -->
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" role="dialog"
+     aria-labelledby="galleryModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <h4 class="modal-title" id="galleryModalLabel"></h4>
+        <p class="modal-description text-muted"></p>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
 
 {{ block "scripts" . }}{{ partial "scripts.html" . }}{{ end }}
 </body>

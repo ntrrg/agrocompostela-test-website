@@ -6,6 +6,11 @@
 .markdown #toc-title {
   color: #468847;
   font-family: "Stonehenge";
+  font-size: 2em;
+}
+
+.markdown #toc-title strong {
+  font-weight: normal;
 }
 
 .markdown hr {

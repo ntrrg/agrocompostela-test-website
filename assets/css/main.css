@@ -245,6 +245,7 @@ body > footer .powered-by li a {
 
 .product-card a {
   color: #000;
+  text-decoration: none;
 }
 
 .product-card img {
@@ -257,7 +258,6 @@ body > footer .powered-by li a {
 }
 
 .product-card h1 {
-  color: #000;
   font-size: 1.5em;
   margin: 0.5em;
 }
@@ -301,4 +301,19 @@ body > footer .powered-by li a {
 }
 
 /* } Pagination */
+
+/* Gallery modal { */
+
+#gallery-modal .modal-dialog {
+  width: 95%;
+}
+
+#gallery-modal img {
+  width: 100%;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+/* } Gallery modal */
 

@@ -1,5 +1,5 @@
 .pages-list > div {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding: 0em;
 }
 
@@ -11,7 +11,9 @@
 .pages-list .recipes {
   background: #fff;
   border-radius: 0.5em;
+  display: block;
   filter: drop-shadow(0em 0em 0.1em #000000aa);
+  margin: 0em auto;
 }
 
 .pages-list .blog .image,
@@ -46,15 +48,23 @@
 }
 
 .pages-list .gallery {
+  height: 15em;
+
+  margin: 0em auto;
   padding: 0.5em;
+}
+
+.pages-list .gallery > div {
+  height: 100%;
 }
 
 .pages-list .gallery img {
   width: 100%;
-  min-height: 5em;
+  height: 100%;
 
   border-radius: 0.5em;
-  object-fit: contain;
+  cursor: pointer;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -62,10 +72,15 @@
   width: 100%;
 
   background-color: #ffffff88;
+  cursor: pointer;
   padding: 1em;
 
   position: absolute;
   bottom: 0em;
+}
+
+.pages-list.taxonomy > div {
+  padding: 0.5em;
 }
 
 .pages-list.taxonomy h3,

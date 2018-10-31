@@ -1,5 +1,6 @@
 ---
 title: Acerca
+slogan: Ama y crece con Agrocompostela
 description: Somos una empresa 100% orgánica y nuestros productos no contienen gluten.
 button: Conoce más acerca de nosotros
 ---
