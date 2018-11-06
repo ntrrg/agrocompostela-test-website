@@ -11,14 +11,14 @@ sections:
   label: Páginas
   create: documents
   match: "*.es.*"
-  new_doc_ext: ".es.md"
+  new_doc_ext: es.md
 - type: directory
   path: content/blog
   label: Artículos
   create: all
   match: "**/*.es.*"
   exclude: "**/_*"
-  new_doc_ext: ".es.md"
+  new_doc_ext: es.md
   templates:
   - default
 - type: directory
@@ -27,7 +27,7 @@ sections:
   create: all
   match: "**/*.es.*"
   exclude: "**/_*"
-  new_doc_ext: ".es.md"
+  new_doc_ext: es.md
   templates:
   - gallery
 - type: directory
@@ -36,7 +36,7 @@ sections:
   create: all
   match: "**/*.es.*"
   exclude: "**/_*"
-  new_doc_ext: ".es.md"
+  new_doc_ext: es.md
   templates:
   - default
 - type: directory
@@ -45,7 +45,7 @@ sections:
   create: all
   match: "**/*.es.*"
   exclude: "**/_*"
-  new_doc_ext: ".es.md"
+  new_doc_ext: es.md
   templates:
   - demo-product
 - type: heading
@@ -55,14 +55,14 @@ sections:
   label: Pages
   create: documents
   match: "*.en.*"
-  new_doc_ext: ".en.md"
+  new_doc_ext: en.md
 - type: directory
   path: content/blog
   label: Articles
   create: all
   match: "**/*.en.*"
   exclude: "**/_*"
-  new_doc_ext: ".en.md"
+  new_doc_ext: en.md
   templates:
   - default
 - type: directory
@@ -71,7 +71,7 @@ sections:
   create: all
   match: "**/*.en.*"
   exclude: "**/_*"
-  new_doc_ext: ".en.md"
+  new_doc_ext: en.md
   templates:
   - gallery
 - type: directory
@@ -80,7 +80,7 @@ sections:
   create: all
   match: "**/*.en.*"
   exclude: "**/_*"
-  new_doc_ext: ".en.md"
+  new_doc_ext: en.md
   templates:
   - default
 - type: directory
@@ -89,7 +89,7 @@ sections:
   create: all
   match: "**/*.en.*"
   exclude: "**/_*"
-  new_doc_ext: ".en.md"
+  new_doc_ext: en.md
   templates:
   - demo-product
 - type: heading
