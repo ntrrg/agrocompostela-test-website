@@ -18,7 +18,11 @@ fields:
   label: Description
 - type: file
   name: image
-  label: Image
+  label: Thumbnail
+- type: image_gallery
+  label: Images
+  name: images
+  description: This images will be dsplayed at the product page
 - type: tag_list
   label: Tags
   name: tags
