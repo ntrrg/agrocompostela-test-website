@@ -1,7 +1,6 @@
 ---
 title: Artículo de ejemplo
-# date: 2028-07-05T18:35:00-04:00
-date: 2018-07-05T18:35:00-04:00
+date: 2028-07-05T18:35:00-04:00
 image: https://via.placeholder.com/350x350
 description: Este es un artículo de ejemplo para ver los estilos del tema.
 tags:

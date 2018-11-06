@@ -1,7 +1,6 @@
 ---
 title: Demo article
-# date: 2028-07-05T18:35:00-04:00
-date: 2018-07-05T18:35:00-04:00
+date: 2028-07-05T18:35:00-04:00
 image: https://via.placeholder.com/350x350
 description: This is a demo article to see the theme styles.
 tags:
