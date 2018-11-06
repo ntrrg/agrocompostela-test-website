@@ -19,8 +19,3 @@ fields:
 - type: file
   name: image
   label: Image
-- type: text
-  name: lang
-  label: Language
-  config:
-    required: true
