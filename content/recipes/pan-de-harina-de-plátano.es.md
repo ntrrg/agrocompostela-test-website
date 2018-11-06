@@ -8,29 +8,18 @@ title = "Pan de harina de plátano"
 +++
 # Ingredientes
 
-1 taza de harina de plátano
-
-1/2 taza de harina de trigo
-
-1/2 taza de azúcar moreno
-
-1/2 taza de azúcar blanca
-
-4 huevos
-
-1/2 taza de leche
-
-1 cucharada de vainilla
-
-1 cucharada de sal
-
-2 cucharadas de levadura en polvo
-
-2 cucharadas de bicarbonato
-
-40 gr mantequilla
-
-1/2 taza de uvas pasas o nueces picadas
+* 1 taza de harina de plátano
+* 1/2 taza de harina de trigo
+* 1/2 taza de azúcar moreno
+* 1/2 taza de azúcar blanca
+* 4 huevos
+* 1/2 taza de leche
+* 1 cucharada de vainilla
+* 1 cucharada de sal
+* 2 cucharadas de levadura en polvo
+* 2 cucharadas de bicarbonato
+* 40 gr mantequilla
+* 1/2 taza de uvas pasas o nueces picadas
 
 # Preparación
 
