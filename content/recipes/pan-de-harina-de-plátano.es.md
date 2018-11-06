@@ -1,7 +1,7 @@
 +++
 date = "2018-11-06T14:07:29-04:00"
 description = ""
-image = ""
+image = "/uploads/banana-bread.jpg"
 tags = []
 title = "Pan de harina de plátano"
 
