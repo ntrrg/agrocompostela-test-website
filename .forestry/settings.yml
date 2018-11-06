@@ -16,6 +16,12 @@ sections:
   match: "**/*"
   exclude: "**/_*"
 - type: directory
+  path: content/gallery
+  label: Gallery
+  create: all
+  match: "**/*"
+  exclude: "**/_*"
+- type: directory
   path: content/recipes
   label: Recipes
   create: all
