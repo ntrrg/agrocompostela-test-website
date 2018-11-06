@@ -15,6 +15,7 @@
         {{ end }}
 
         {{ if isset .Params "tags" }}
+        {{ if gt (len .Params.tags) 0 }}
           <dt>{{ i18n "TAGS" }}:</dt>
           <dd>
             {{ range .Params.tags }}
@@ -22,6 +23,7 @@
                 #{{ . }}</a>
             {{ end }}
           </dd>
+        {{ end }}
         {{ end }}
       </dl>
     </header>
