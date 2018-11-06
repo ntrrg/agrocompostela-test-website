@@ -8,21 +8,14 @@ title = "Cheesecake de plátano"
 +++
 # Ingredientes
 
-1 taza de harina de plátano
-
-1 paquete de galletas ducales o doré
-
-90 gr de margarina derretida
-
-500 gr de queso crema
-
-3/4 de taza de azúcar moreno
-
-4 huevos
-
-1 cucharada de vainilla
-
-1 taza de crema de leche
+* 1 taza de harina de plátano
+* 1 paquete de galletas ducales o doré
+* 90 gr de margarina derretida
+* 500 gr de queso crema
+* 3/4 de taza de azúcar moreno
+* 4 huevos
+* 1 cucharada de vainilla
+* 1 taza de crema de leche
 
 # Preparación
 
