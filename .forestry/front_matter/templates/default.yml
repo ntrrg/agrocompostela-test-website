@@ -22,10 +22,5 @@ fields:
 - type: tag_list
   label: Tags
   name: tags
-- type: text
-  name: lang
-  label: Language
-  config:
-    required: true
 pages:
 - content/recipes/bizcocho.md
