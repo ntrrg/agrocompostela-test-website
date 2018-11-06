@@ -22,5 +22,3 @@ fields:
 - type: tag_list
   label: Tags
   name: tags
-pages:
-- content/recipes/bizcocho.md

@@ -4,41 +4,92 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
+- type: heading
+  label: Español
+- type: directory
+  path: content
+  label: Páginas
+  create: documents
+  match: "*.es.*"
+  new_doc_ext: ".es.md"
+- type: directory
+  path: content/blog
+  label: Artículos
+  create: all
+  match: "**/*.es.*"
+  exclude: "**/_*"
+  new_doc_ext: ".es.md"
+  templates:
+  - default
+- type: directory
+  path: content/gallery
+  label: Galería
+  create: all
+  match: "**/*.es.*"
+  exclude: "**/_*"
+  new_doc_ext: ".es.md"
+  templates:
+  - gallery
+- type: directory
+  path: content/recipes
+  label: Recetas
+  create: all
+  match: "**/*.es.*"
+  exclude: "**/_*"
+  new_doc_ext: ".es.md"
+  templates:
+  - default
+- type: directory
+  path: content/products
+  label: Tienda
+  create: all
+  match: "**/*.es.*"
+  exclude: "**/_*"
+  new_doc_ext: ".es.md"
+  templates:
+  - demo-product
+- type: heading
+  label: English
 - type: directory
   path: content
   label: Pages
-  create: all
-  match: "*"
+  create: documents
+  match: "*.en.*"
+  new_doc_ext: ".en.md"
 - type: directory
   path: content/blog
   label: Articles
   create: all
-  match: "**/*"
+  match: "**/*.en.*"
   exclude: "**/_*"
+  new_doc_ext: ".en.md"
   templates:
   - default
 - type: directory
   path: content/gallery
   label: Gallery
   create: all
-  match: "**/*"
+  match: "**/*.en.*"
   exclude: "**/_*"
+  new_doc_ext: ".en.md"
   templates:
   - gallery
 - type: directory
   path: content/recipes
   label: Recipes
   create: all
-  match: "**/*"
+  match: "**/*.en.*"
   exclude: "**/_*"
+  new_doc_ext: ".en.md"
   templates:
   - default
 - type: directory
   path: content/products
   label: Shop
   create: all
-  match: "**/*"
+  match: "**/*.en.*"
   exclude: "**/_*"
+  new_doc_ext: ".en.md"
   templates:
   - demo-product
 - type: heading
