@@ -22,8 +22,5 @@ fields:
 - type: tag_list
   label: Tags
   name: tags
-- type: boolean
-  name: draft
-  label: Draft
 pages:
 - content/recipes/bizcocho.md
