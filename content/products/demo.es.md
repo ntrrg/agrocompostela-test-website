@@ -1,7 +1,6 @@
 ---
 title: Producto de pruebas
-# date: 2028-07-05T18:35:00-04:00
-date: 2018-07-05T18:35:00-04:00
+date: 2028-07-05T18:35:00-04:00
 description: Este es un producto de ejemplo para ver los estilos del tema.
 image: https://via.placeholder.com/350x350
 images:

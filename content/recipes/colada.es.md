@@ -2,13 +2,7 @@
 title: Colada
 date: 2018-10-30T12:45:00-04:00
 image: /uploads/recipes-colada.jpg
-description: Esta es una receta de ejemplo para ver los estilos del tema.
-tags:
-  - tag1
-  - tag2
-  - tag3
-  - tag4
-  - tag5
+description: Bebida espesa a base de plátano.
 ---
 
 # Ingredientes

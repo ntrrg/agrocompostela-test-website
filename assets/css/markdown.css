@@ -50,6 +50,14 @@
   font-size: 1.1em;
 }
 
+.markdown p {
+  margin-bottom: 0.5em;
+}
+
+.markdown p:last-child {
+  margin-bottom: 0em;
+}
+
 .markdown img {
   max-width: 100%;
 

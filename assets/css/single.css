@@ -3,6 +3,8 @@
 
   display: block;
   margin: 2em 0em 2em -2em;
+  object-fit: contain;
+  object-position: center;
 }
 
 @media screen and (min-width: 768px) {

@@ -62,14 +62,16 @@
                     </span>
                   </div>
 
-                  <div>
-                    <strong>{{ i18n "TAGS" }}:</strong>
+                  {{ if isset .Params "tags" }}
+                    <div>
+                      <strong>{{ i18n "TAGS" }}:</strong>
 
-                    {{ range .Params.tags }}
-                      <a href="{{ absLangURL "tags/" }}{{ . | urlize }}">
-                        #{{ . }}</a>
-                    {{ end }}
-                  </div>
+                      {{ range .Params.tags }}
+                        <a href="{{ absLangURL "tags/" }}{{ . | urlize }}">
+                          #{{ . }}</a>
+                      {{ end }}
+                    </div>
+                  {{ end }}
                 </div>
 
                 <p class="description">{{ .Description }}</p>
