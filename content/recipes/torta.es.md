@@ -1,7 +1,7 @@
 +++
 date = "2018-11-06T13:55:42-04:00"
 description = ""
-image = ""
+image = "/uploads/banana-cake.jpg"
 tags = []
 title = "Torta"
 
