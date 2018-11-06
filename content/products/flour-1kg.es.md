@@ -13,6 +13,7 @@ price:
   amount: 25
 - currency: BTC
   amount: 0.001
+description: Harina de plátano artesanal hecha en Venezuela.
 
 ---
 Esta harina es muy apreciada por sus propiedades nutricionales, carbohidratos y proteínas, y es rica en vitaminas, minerales y fibra, además del denominado almidón resistente, llamado así porque es resistente a las enzimas digestivas del hombre, no es absorbido por el intestino delgado, considerando su actividad como la de la fibra dietética.
