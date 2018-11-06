@@ -8,17 +8,12 @@ title = "Galletas"
 +++
 # Ingredientes
 
-2 tazas de Harina de plátano
-
-1 taza de harina de trigo
-
-1/2 taza de Azúcar
-
-125 grs. de Mantequilla
-
-1 huevo
-
-1 cucharadita de Vainilla
+* 2 tazas de Harina de plátano
+* 1 taza de harina de trigo
+* 1/2 taza de Azúcar
+* 125 grs. de Mantequilla
+* 1 huevo
+* 1 cucharadita de Vainilla
 
 # Preparación
 
