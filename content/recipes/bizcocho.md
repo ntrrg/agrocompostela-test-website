@@ -2,6 +2,7 @@
 date = "2018-11-06T12:15:05-04:00"
 description = ""
 image = "/uploads/bizcocho.jpg"
+lang = "es"
 tags = []
 title = "Bizcocho"
 
