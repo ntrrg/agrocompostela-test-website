@@ -25,3 +25,5 @@ fields:
 - type: boolean
   name: draft
   label: Draft
+pages:
+- content/recipes/bizcocho.md
