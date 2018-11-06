@@ -56,7 +56,9 @@
             </button>
           </div>
 
-          {{ if eq .Content "" }}
+          {{ $n := len (trim (trim .Content "\n") " ") }}
+
+          {{ if ne $n 0 }}
             <div class="markdown">{{ .Content }}</div>
           {{ else }}
             <p>{{ .Description }}</p>
