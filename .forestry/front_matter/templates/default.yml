@@ -23,6 +23,7 @@ fields:
   label: Tags
   name: tags
 pages:
+- content/recipes/crepes-de-plátano.es.md
 - content/recipes/panquecas.es.md
 - content/recipes/galletas.es.md
 - content/recipes/pan-de-harina-de-plátano.es.md
