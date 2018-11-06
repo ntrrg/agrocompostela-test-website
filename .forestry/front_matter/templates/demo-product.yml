@@ -1,11 +1,16 @@
 ---
-label: Demo product
-hide_body: 
-is_partial: 
+label: products
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
   type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
   hidden: false
   default: ''
 - name: description
@@ -16,16 +21,6 @@ fields:
 - name: image
   label: Image
   type: file
-  hidden: false
-  default: ''
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
-- name: tags
-  label: Tags
-  type: tag_list
   hidden: false
   default: ''
 - name: images
@@ -47,5 +42,10 @@ fields:
     type: text
     hidden: false
     default: ''
+  hidden: false
+  default: ''
+- name: tags
+  label: Tags
+  type: tag_list
   hidden: false
   default: ''
