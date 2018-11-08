@@ -69,6 +69,11 @@ label {
   margin: 0.5em 0em;
 }
 
+.btn-hl {
+  background-color: #468847;
+  color: #fff;
+}
+
 /* Header { */
 
 .header a {

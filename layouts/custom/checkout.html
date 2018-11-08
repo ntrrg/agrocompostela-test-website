@@ -1,0 +1,91 @@
+{{ define "main" }}
+  <main class="main">
+    <header>
+      <h1 class="main-title text-center">{{ .Title }}</h1>
+    </header>
+
+    <main>
+      <div class="text-center">
+        <form id="checkout-form" method="POST"
+              action="https://formspree.io/{{ .Site.Params.org.email }}">
+          <input type="text" name="email" class="form-control"
+                 placeholder="{{ i18n "EMAIL" }}" required/>
+
+          <input type="hidden" name="message"/>
+          <input type="hidden" name="_next" value="{{ absURL .Permalink }}" />
+
+          <input type="submit" class="btn btn-hl" id="send-form"
+                 value="{{ i18n "BUY" }}"/>
+
+          <!--
+          <button class="btn btn-hl simpleCart_checkout">PayPal</button>
+          -->
+        </form>
+      </div>
+
+      <div>
+        <div class="simpleCart_items"></div>
+
+        <div class="text-center">
+          <strong>Total:</strong>
+          <span class="simpleCart_grandTotal"></span>
+        </div>
+      </div>
+    </main>
+  </main>
+
+  <style type="text/css">
+    #checkout-form input[name="email"] {
+      width: 15em;
+
+      display: block;
+      margin: 1em auto;
+    }
+
+    .simpleCart_items table {
+      margin: 1em auto;
+    }
+
+    .simpleCart_items tr {
+      border-bottom: 0.1em solid #ccc;
+    }
+
+    .simpleCart_items .headerRow {
+      background-color: #468847;
+      color: #fff;
+    }
+
+    .simpleCart_items .headerRow a {
+      color: #fff;
+    }
+
+    .simpleCart_items th,
+    .simpleCart_items td {
+      padding: 0.5em;
+    }
+
+    .simpleCart_items .itemRow.odd {
+      background: #eee;
+    }
+  </style>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.querySelector('#checkout-form')
+        .addEventListener('submit', function() {
+          var data = "Total: "
+            + simpleCart.toCurrency(simpleCart.grandTotal()) + '\n'
+
+          simpleCart.each(function(item) {
+            data += '\n'
+              + item.get('name').substring(0, 39).padEnd(40) + ' | '
+              + item.get('quantity').toString().padStart(3) + ' | '
+              + simpleCart.toCurrency(item.get('price') * item.get('quantity')).padStart(15)
+          })
+
+          this.querySelector('input[name="message"]').value = data
+        })
+    })
+  </script>
+{{ end }}
+

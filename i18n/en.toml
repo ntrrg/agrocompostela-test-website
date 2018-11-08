@@ -1,6 +1,12 @@
 [ADD_TO_CART]
 other = "Add"
 
+[BUY]
+other = "Buy"
+
+[CART_NAME]
+other = "Name"
+
 [CATEGORIES]
 other = "Categories"
 
@@ -9,6 +15,9 @@ other = "Currency"
 
 [DATE]
 other = "Date"
+
+[EMAIL]
+other = "Email"
 
 [LANGUAGE]
 other = "Language"

@@ -1,6 +1,6 @@
 <div class="product-card text-center simpleCart_shelfItem">
   <a href="{{ .Permalink }}">
-    <img alt="{{ .Title }}" data-src="{{ .Params.image }}"/>
+    <img alt="{{ .Title }}" class="item_thumb" data-src="{{ .Params.image }}"/>
     <h1 class="item_name">{{ .Title }}</h1>
 
     <div class="price text-muted">
@@ -10,8 +10,9 @@
         {{ end }}
 
         <input type="hidden" value="{{ .currency }} {{ .amount }}"
-               class="product-price-{{ .currency }}"/>
+               class="item_{{ .currency }}"/>
       {{ end }}
+      <input type="hidden" value="test" class="item_custom-field"/>
     </div>
   </a>
 
