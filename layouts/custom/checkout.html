@@ -77,10 +77,12 @@
             + simpleCart.toCurrency(simpleCart.grandTotal()) + '\n'
 
           simpleCart.each(function(item) {
+            g = item.get
+
             data += '\n'
-              + item.get('name').substring(0, 29).padEnd(30) + ' | '
-              + item.get('quantity').toString().padStart(3) + ' | '
-              + simpleCart.toCurrency(item.get('price') * item.get('quantity')).padStart(15)
+              + g('name').substring(0, 34).padEnd(35) + ' | '
+              + g('quantity').toString().padStart(3) + ' | '
+              + (g('price') * g('quantity')).toString().padStart(6)
           })
 
           this.querySelector('input[name="message"]').value = data
