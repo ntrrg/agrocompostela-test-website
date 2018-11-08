@@ -8,11 +8,19 @@
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {{ end }}
 
+{{ $jquery := resources.Get "vendor/template/js/jquery.min.js" | minify | fingerprint }}
+
+<script src="{{ $jquery.Permalink }}"
+        integrity="{{ $jquery.Data.Integrity }}"></script>
+
+{{ $simpleCart := resources.Get "vendor/template/js/simpleCart.js" | minify | fingerprint }}
+
+<script src="{{ $simpleCart.Permalink }}"
+        integrity="{{ $simpleCart.Data.Integrity }}"></script>
+
 {{ $suffix := "" }}
 {{ $scripts := slice }}
-{{ $scripts = $scripts | append "vendor/template/js/jquery.min.js" }}
 {{ $scripts = $scripts | append "vendor/template/js/bootstrap-3.1.1.min.js" }}
-{{ $scripts = $scripts | append "vendor/template/js/simpleCart.js" }}
 {{ $scripts = $scripts | append "vendor/template/js/jquery.flexisel.js" }}
 {{ $scripts = $scripts | append "vendor/blazy.min.js" }}
 {{ $scripts = $scripts | append "js/main.js" }}
