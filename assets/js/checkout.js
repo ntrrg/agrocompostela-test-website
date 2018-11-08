@@ -16,4 +16,5 @@ document.querySelector('#checkout-form')
     })
 
     this.querySelector('input[name="message"]').value = data
+    simpleCart.empty()
   })

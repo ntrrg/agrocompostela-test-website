@@ -1,5 +1,7 @@
 *.sublime*
 *.swp
+*.swo
+*~
 Session.vim
 /public/
 nogit-*

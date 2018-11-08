@@ -192,6 +192,8 @@ label {
 /* Main { */
 
 main.main {
+  min-height: 60vh;
+
   padding: 0em 2em 2em 2em;
 }
 

@@ -12,7 +12,9 @@
                  placeholder="{{ i18n "EMAIL" }}" required/>
 
           <input type="hidden" name="message"/>
-          <input type="hidden" name="_next" value="{{ absURL .Permalink }}" />
+
+          <input type="hidden" name="_next"
+                 value="{{ absLangURL "success/" }}" />
 
           <input type="submit" class="btn btn-hl" id="send-form"
                  value="{{ i18n "BUY" }}"/>
