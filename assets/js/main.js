@@ -65,11 +65,7 @@ $('.currency-selector li a').click(function(e) {
 })
 
 function setCurrency(c) {
-  if (simpleCart.currency().code === c) {
-    return
-  }
-
-  if (simpleCart.grandTotal() != 0) {
+  if (simpleCart.grandTotal() != 0 && simpleCart.currency().code !== c) {
     alert(CART_ALERT)
     return
   }
