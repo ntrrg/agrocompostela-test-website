@@ -2,10 +2,7 @@
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {{ end }}
 
-{{ $simpleCart := resources.Get "vendor/template/js/simpleCart.min.js" | fingerprint }}
-
-<script src="{{ $simpleCart.Permalink }}"
-        integrity="{{ $simpleCart.Data.Integrity }}"></script>
+<script src="{{ relURL "vendor/template/js/simpleCart.js" }}"></script>
 
 <script>
   var currency = localStorage.getItem('currency')
