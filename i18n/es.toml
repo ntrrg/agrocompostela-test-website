@@ -4,6 +4,9 @@ other = "Añadir"
 [BUY]
 other = "Comprar"
 
+[CART_ALERT]
+other = "Su carro todavía tiene productos con otra moneda, por favor vacíelo"
+
 [CART_NAME]
 other = "Nombre"
 
@@ -21,6 +24,9 @@ other = "Correo electrónico"
 
 [LANGUAGE]
 other = "Idioma"
+
+[NAME]
+other = "Nombre"
 
 [NOTE_TITLE]
 other = "Nota"

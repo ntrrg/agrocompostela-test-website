@@ -4,6 +4,9 @@ other = "Add"
 [BUY]
 other = "Buy"
 
+[CART_ALERT]
+other = "Your cart have products with other currency, please clean it up"
+
 [CART_NAME]
 other = "Name"
 
@@ -21,6 +24,9 @@ other = "Email"
 
 [LANGUAGE]
 other = "Language"
+
+[NAME]
+other = "Name"
 
 [NOTE_TITLE]
 other = "Note"

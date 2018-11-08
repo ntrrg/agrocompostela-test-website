@@ -107,7 +107,8 @@
               <span class="caret"></span>
             </a>
 
-            <ul class="dropdown-menu" aria-labelledby="currency-dropdown">
+            <ul class="dropdown-menu currency-selector"
+                aria-labelledby="currency-dropdown">
               {{ range .Site.Params.currencies }}
                 <li><a href="#" data-currency="{{ . }}">{{ . }}</a></li>
               {{ end }}

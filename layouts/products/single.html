@@ -5,13 +5,6 @@
         <div class="col-sm-6 col-md-5 col-lg-offset-1 zoom-grid">
           <div class="flexslider">
             <ul class="slides">
-              <li data-thumb="{{ .Params.image }}">
-                <div class="thumb-image">
-                  <img src="{{ .Params.image }}" data-imagezoom="true"
-                       class="img-responsive item_thumb" />
-                </div>
-              </li>
-
               {{ range .Params.images }}
                 <li data-thumb="{{ . }}">
                   <div class="thumb-image">

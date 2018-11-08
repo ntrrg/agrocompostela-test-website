@@ -30,64 +30,43 @@
           <strong>Total:</strong>
           <span class="simpleCart_grandTotal"></span>
         </div>
+
+        <style type="text/css">
+          #checkout-form input[name="email"] {
+            width: 15em;
+
+            display: block;
+            margin: 1em auto;
+          }
+
+          .simpleCart_items table {
+            margin: 1em auto;
+          }
+
+          .simpleCart_items tr {
+            border-bottom: 0.1em solid #ccc;
+          }
+
+          .simpleCart_items .headerRow {
+            background-color: #468847;
+            color: #fff;
+          }
+
+          .simpleCart_items .headerRow a {
+            color: #fff;
+          }
+
+          .simpleCart_items th,
+          .simpleCart_items td {
+            padding: 0.5em;
+          }
+
+          .simpleCart_items .itemRow.odd {
+            background: #eee;
+          }
+        </style>
       </div>
     </main>
   </main>
-
-  <style type="text/css">
-    #checkout-form input[name="email"] {
-      width: 15em;
-
-      display: block;
-      margin: 1em auto;
-    }
-
-    .simpleCart_items table {
-      margin: 1em auto;
-    }
-
-    .simpleCart_items tr {
-      border-bottom: 0.1em solid #ccc;
-    }
-
-    .simpleCart_items .headerRow {
-      background-color: #468847;
-      color: #fff;
-    }
-
-    .simpleCart_items .headerRow a {
-      color: #fff;
-    }
-
-    .simpleCart_items th,
-    .simpleCart_items td {
-      padding: 0.5em;
-    }
-
-    .simpleCart_items .itemRow.odd {
-      background: #eee;
-    }
-  </style>
-
-  <script>
-    window.addEventListener('load', function() {
-      document.querySelector('#checkout-form')
-        .addEventListener('submit', function() {
-          var data = "Total: "
-            + simpleCart.toCurrency(simpleCart.grandTotal()) + '\n'
-
-          simpleCart.each(function(item) {
-            g = item.get
-
-            data += '\n'
-              + g('name').substring(0, 34).padEnd(35) + ' | '
-              + g('quantity').toString().padStart(3) + ' | '
-              + (g('price') * g('quantity')).toString().padStart(6)
-          })
-
-          this.querySelector('input[name="message"]').value = data
-        })
-    })
-  </script>
 {{ end }}
 
