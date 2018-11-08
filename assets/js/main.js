@@ -57,6 +57,8 @@ simpleCart({
   currency: currency
 })
 
+setCurrency(currency)
+
 $('.currency-selector li a').click(function(e) {
   e.preventDefault()
   setCurrency(this.dataset.currency)
@@ -68,6 +70,11 @@ function setCurrency(c) {
     return
   }
 
-  console.log(c)
+  localStorage.setItem('currency', c)
+
+  $('.item_price').each(function() {
+    var price = $(this.parentNode).find('.item_' + c).val()
+    $(this).html(price)
+  })
 }
 
