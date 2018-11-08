@@ -78,7 +78,7 @@
 
           simpleCart.each(function(item) {
             data += '\n'
-              + item.get('name').substring(0, 39).padEnd(40) + ' | '
+              + item.get('name').substring(0, 29).padEnd(30) + ' | '
               + item.get('quantity').toString().padStart(3) + ' | '
               + simpleCart.toCurrency(item.get('price') * item.get('quantity')).padStart(15)
           })
