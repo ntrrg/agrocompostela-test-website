@@ -5,7 +5,7 @@
 {{ $author := $org }}
 
 {{ with $.Param "author" }}
-  $author = (index $.Site.Data .)
+  {{ $author = . }}
 {{ end }}
 
 <link rel="canonical" href="{{ .Permalink }}"/>

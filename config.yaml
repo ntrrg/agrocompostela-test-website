@@ -1,4 +1,4 @@
-baseURL: https://agrocompostela.netlify.com
+baseURL: https://agrocompostela.com
 enableRobotsTXT: true
 Paginate: 12
 params:
@@ -36,9 +36,9 @@ params:
         icon: social-telegram.svg
         text: "@agrocompostela"
       email:
-        url: mailto://info@agrocompostela.com.ve
+        url: mailto://info@agrocompostela.com
         icon: social-email.svg
-        text: info@agrocompostela.com.ve
+        text: info@agrocompostela.com
       phone:
         url: tel://580001234567
         icon: social-phone.svg
