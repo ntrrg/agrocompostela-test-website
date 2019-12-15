@@ -1,4 +1,4 @@
-baseURL: https://agrocompostela.com
+baseURL: https://agrocompostela-test-website.netlify.com
 enableRobotsTXT: true
 Paginate: 12
 params:
