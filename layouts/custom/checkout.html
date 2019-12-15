@@ -6,15 +6,15 @@
 
     <main>
       <div class="text-center">
-        <form id="checkout-form" method="POST"
-              action="https://formspree.io/{{ .Site.Params.org.email }}">
+        <form id="checkout-form" name="checkout"
+              action="{{ relLangURL "success/" }}"
+              data-netlify="true" data-netlify-recaptcha="true">
           <input type="text" name="email" class="form-control"
                  placeholder="{{ i18n "EMAIL" }}" required/>
 
           <input type="hidden" name="message"/>
 
-          <input type="hidden" name="_next"
-                 value="{{ absLangURL "success/" }}" />
+          <div data-netlify-recaptcha="true"></div>
 
           <input type="submit" class="btn btn-hl" id="send-form"
                  value="{{ i18n "BUY" }}"/>
