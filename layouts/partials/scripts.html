@@ -8,15 +8,13 @@
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {{ end }}
 
-{{ $jquery := resources.Get "vendor/template/js/jquery.min.js" | minify | fingerprint }}
+{{ $jquery := resources.Get "vendor/template/js/jquery.min.js" | minify }}
 
-<script src="{{ $jquery.Permalink }}"
-        integrity="{{ $jquery.Data.Integrity }}"></script>
+<script src="{{ $jquery.Permalink }}"></script>
 
 {{ $simpleCart := resources.Get "vendor/template/js/simpleCart.js" | minify | fingerprint }}
 
-<script src="{{ $simpleCart.Permalink }}"
-        integrity="{{ $simpleCart.Data.Integrity }}"></script>
+<script src="{{ $simpleCart.Permalink }}"></script>
 
 {{ $suffix := "" }}
 {{ $scripts := slice }}
@@ -48,9 +46,8 @@
   {{ $res := slice }}
   {{ range $scripts }}{{ $res = $res | append (resources.Get .) }}{{ end }}
 
-  {{ $script := resources.Concat (printf "js/bundle%v.js" $suffix) $res | minify | fingerprint }}
+  {{ $script := resources.Concat (printf "js/bundle%v.js" $suffix) $res | minify }}
 
-  <script async src="{{ $script.Permalink }}"
-          integrity="{{ $script.Data.Integrity }}"></script>
+  <script async src="{{ $script.Permalink }}"></script>
 {{ end }}
 
